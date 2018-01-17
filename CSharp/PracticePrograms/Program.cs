@@ -10,6 +10,17 @@ namespace PracticePrograms
     {
         static void Main(string[] args)
         {
+            //new SortingAlgorithms.BubbleSort();
+            //new StringManipulation.Palindrome();
+            //new Patterns.TriangleLeft();
+            //new Patterns.TriangleLeftInverted();
+            //new Patterns.TriangleRight();
+            //new Patterns.TriangleRightInverted();
+            //new Patterns.Pyramid();
+            //new Patterns.PyramidInverted();
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }
