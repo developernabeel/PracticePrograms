@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Patterns\Pyramid.cs" />
     <Compile Include="Patterns\PyramidInverted.cs" />
+    <Compile Include="Patterns\SierpinskiTriangle.cs" />
     <Compile Include="Patterns\TriangleRightInverted.cs" />
     <Compile Include="SortingAlgorithms\BubbleSort.cs" />
     <Compile Include="StringManipulation\Palindrome.cs" />

@@ -18,6 +18,7 @@ namespace PracticePrograms
             //new Patterns.TriangleRightInverted();
             //new Patterns.Pyramid();
             //new Patterns.PyramidInverted();
+            //new Patterns.SierpinskiTriangle();
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
