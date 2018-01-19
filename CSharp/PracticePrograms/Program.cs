@@ -19,6 +19,9 @@ namespace PracticePrograms
             //new Patterns.Pyramid();
             //new Patterns.PyramidInverted();
             //new Patterns.SierpinskiTriangle();
+            //new Arithmetics.FibbonaciSeries();
+            //new Arithmetics.FibbonaciNumber();
+            new Arithmetics.ArmstrongNumber();
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();

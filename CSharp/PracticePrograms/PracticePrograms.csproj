@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arithmetics\ArmstrongNumber.cs" />
+    <Compile Include="Arithmetics\FibbonaciNumber.cs" />
+    <Compile Include="Arithmetics\FibbonaciSeries.cs" />
     <Compile Include="Patterns\Pyramid.cs" />
     <Compile Include="Patterns\PyramidInverted.cs" />
     <Compile Include="Patterns\SierpinskiTriangle.cs" />
