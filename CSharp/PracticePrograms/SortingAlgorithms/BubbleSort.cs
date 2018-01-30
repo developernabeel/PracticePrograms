@@ -11,18 +11,18 @@ namespace PracticePrograms.SortingAlgorithms
         public BubbleSort()
         {
             int[] array = { 453, 11, -1, 9, 50, 771, 0, 649, 770, -12, 240, 9, 771 };
-            int[] sortedArray = Sort(array);
+            Sort(array);
 
-            foreach (int item in sortedArray)
+            foreach (int item in array)
             {
                 Console.WriteLine(item);
             }
         }
 
-        int[] Sort(int[] array)
+        void Sort(int[] array)
         {
             if (array.Length <= 1)
-                return array;
+                return;
 
             int temp = 0;
 
@@ -38,7 +38,6 @@ namespace PracticePrograms.SortingAlgorithms
                     }
                 }
             }
-            return array;
         }
     }
 }

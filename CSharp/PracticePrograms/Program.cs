@@ -11,7 +11,9 @@ namespace PracticePrograms
         static void Main(string[] args)
         {
             //new SortingAlgorithms.BubbleSort();
+            //new SortingAlgorithms.QuickSort();
             //new StringManipulation.Palindrome();
+            //new StringManipulation.Anagram();
             //new Patterns.TriangleLeft();
             //new Patterns.TriangleLeftInverted();
             //new Patterns.TriangleRight();
