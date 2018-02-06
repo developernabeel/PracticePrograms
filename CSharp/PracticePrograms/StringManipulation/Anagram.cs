@@ -12,6 +12,7 @@ namespace PracticePrograms.StringManipulation
         {
             string str1 = "tom marvolo riddle";
             string str2 = "iam lord voldemort";
+
             Console.WriteLine(IsAnagram(str1, str2));
         }
 
@@ -20,43 +21,35 @@ namespace PracticePrograms.StringManipulation
             if (str1.Length != str2.Length)
                 return false;
 
-            int len = str1.Length;
-            char[] charArr1 = new char[len];
-            char[] charArr2 = new char[len];
+            str1 = Sort(str1);
+            str2 = Sort(str1);
 
-            for (int i = 0; i < len; i++)
-                charArr1[i] = (char)str1[i];
-
-            for (int i = 0; i < len; i++)
-                charArr2[i] = (char)str2[i];
-
-            Sort(charArr1);
-            Sort(charArr2);
-
-            for (int i = 0; i < len; i++)
+            for (int i = 0; i < str1.Length; i++)
             {
-                if (charArr1[i] != charArr2[i])
+                if (str1[i] != str2[i])
                     return false;
             }
-
             return true;
         }
 
-        void Sort(char[] array)
+        string Sort(string str)
         {
-            for (int i = 0; i < array.Length; i++)
+            StringBuilder strb = new StringBuilder(str);
+            int len = strb.Length;
+
+            for (int i = 1; i < len; i++)
             {
-                for (int j = 0; j < array.Length - (1 + i); j++)
+                for (int j = 0; j < len - i; j++)
                 {
-                    if (array[j] > array[j + 1])
+                    if ((char)strb[j] > (char)strb[j + 1])
                     {
-                        char temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
+                        char temp = strb[j];
+                        strb[j] = strb[j + 1];
+                        strb[j + 1] = temp;
                     }
                 }
             }
+            return strb.ToString();
         }
-
     }
 }
